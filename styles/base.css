@@ -144,3 +144,8 @@ footer{
     font-weight: 550;
     padding: 1rem;
 }
+
+#lastModified{
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}
