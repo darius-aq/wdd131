@@ -3,7 +3,7 @@
     --secondary-color: #3a4660;
     --accent-color: #ed8a63;
     --accent-color2: #845007;
-    --font-page: Helvetica, Arial, sans-serif;
+    --font-page: "Roboto", sans-serif;
 }
 
 *{
@@ -11,15 +11,17 @@
     margin: 0;
     box-sizing: border-box;
 }
+header{
+    background-color: var(--primary-color);
+    font-family: var(--font-page);
+    color: var(--secondary-color);
+}
 header span{
     padding: 1.3rem;
     font-size: 1.5rem;
     font-weight: bold;
     display: block;
     text-align: center;
-    background-color: var(--primary-color);
-    font-family: var(--font-page);
-    color: var(--secondary-color);
 }
 nav{
     padding: 1rem 0;
@@ -39,7 +41,7 @@ nav a{
     font-size: 1.1rem;
     display: block;
     text-decoration: none;
-    color: var(--accent-color);
+    color: #fff;
     font-family: var(--font-page);
 }
 nav a:hover{
@@ -72,7 +74,7 @@ h1{
     text-align: center;
     padding: 1rem;
     background-color: var(--secondary-color);
-    color: var(--accent-color);
+    color: #fff;
     font-family: var(--font-page);
 }
 
