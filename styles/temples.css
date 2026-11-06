@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", sans-serif;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: var(--font-page);
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding: 1rem;
+}
+
+#lastModified{
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}

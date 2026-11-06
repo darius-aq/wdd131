@@ -13,3 +13,4 @@ radius = 20;
 area = PI * radius * radius;
 radiusOutput.innerHTML = radius;
 areaOutput.innerHTML = area;
+
