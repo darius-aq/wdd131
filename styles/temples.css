@@ -1,10 +1,96 @@
+:root{
+    --primary-color: #e3c6ac;
+    --secondary-color: #3a4660;
+    --accent-color: #ed8a63;
+    --accent-color2: #845007;
+    --font-page: "Roboto", sans-serif;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body{
-    font-family: "Roboto", sans-serif;
+    font-family: var(--font-page);
+}
+
+header{
+    display: grid;
+    gap: 1rem;
+    padding: 20px;
+    background-color: var(--primary-color);
+}
+h1{
+    color: var(--secondary-color);
+}
+
+#menu{
+    display: flex;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 1rem;
+}
+
+#menu::before{
+    content: "☰";
+}
+
+nav{
+    background-color: var(--secondary-color);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: var(--accent-color);
+}
+
+.active::before{
+    content:"📌";
+}
+
+main{
+    max-width: 650px;
+    margin: 2rem auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 20px;
+    justify-items: center;
+}
+
+main h1{
+    grid-column: 1/-1;
+}
+
+main figure{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid black;
+    text-align: center;
+}
+
+figure figcaption{
+    padding: 0.3rem;
 }
 
 footer{
