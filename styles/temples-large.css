@@ -1,0 +1,19 @@
+@media (min-width: 937px){
+    main{
+        max-width: 100%;
+    }
+    nav ul{
+        flex-direction: row;
+        /* justify-content: space-around; */
+    }
+    #menu{
+        display: none;
+        gap: 0
+    }
+    nav a{
+        display: block;
+    }
+    nav li{
+        flex: 1;
+    }
+}

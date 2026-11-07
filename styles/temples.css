@@ -17,27 +17,45 @@ body{
 
 header{
     display: grid;
-    gap: 1rem;
-    padding: 20px;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.8rem 1.5rem;
     background-color: var(--primary-color);
 }
+
+.open{
+    grid-template-columns: 1fr;
+}
+
 h1{
     color: var(--secondary-color);
+    /* padding: 0.7rem; */
+}
+
+.open h1{
+    display: none;
 }
 
 #menu{
-    display: flex;
+    position: absolute;
+    top: 1.8rem;
+    right: 1.5rem;
     font-size: 1.5rem;
     border: 0;
     background: none;
     background-color: var(--secondary-color);
     color: #fff;
     font-weight: bold;
-    padding: 1rem;
+    padding: 0.92rem;
 }
 
 #menu::before{
     content: "☰";
+}
+
+#menu.open::before{
+    content: "X";
 }
 
 nav{
@@ -53,7 +71,7 @@ nav ul{
 
 nav a {
     text-decoration: none;
-    display: block;
+    display: none;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -61,8 +79,14 @@ nav a {
     font-weight: bold;
 }
 
+
 nav a:hover{
     background-color: var(--accent-color);
+}
+
+/* Toggle open */
+.open a{
+    display: block;
 }
 
 .active::before{
@@ -70,11 +94,11 @@ nav a:hover{
 }
 
 main{
-    max-width: 650px;
-    margin: 2rem auto;
+    max-width: 937px;
+    margin: 2rem 2%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-    gap: 20px;
+    gap: 2rem;
     justify-items: center;
 }
 
