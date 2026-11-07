@@ -28,12 +28,14 @@ header{
     grid-template-columns: 1fr;
 }
 
-h1{
+h1, header p{
     color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: bold;
     /* padding: 0.7rem; */
 }
 
-.open h1{
+.open p{
     display: none;
 }
 
@@ -109,7 +111,6 @@ main h1{
 main figure{
     margin: 0.5rem;
     padding: 0.5rem;
-    border: 1px solid black;
     text-align: center;
 }
 
