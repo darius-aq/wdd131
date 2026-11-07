@@ -6,6 +6,7 @@ hamButton.addEventListener("click", () => {
     hamButton.classList.toggle("open");
     header.classList.toggle("open");
     navigationBar.classList.toggle("open");
+    hamButton.setAttribute("aria-label", hamButton.classList.contains("open") ? "close menu":"open menu" )    
 })
 
 

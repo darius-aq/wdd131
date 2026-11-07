@@ -1,6 +1,6 @@
 :root{
     --primary-color: #e3c6ac;
-    --secondary-color: #3a4660;
+    --secondary-color: #262e3f;
     --accent-color: #ed8a63;
     --accent-color2: #845007;
     --font-page: "Roboto", sans-serif;
@@ -52,7 +52,7 @@ h1{
 
 #menu::before{
     content: "☰";
-}
+} 
 
 #menu.open::before{
     content: "X";
@@ -111,6 +111,11 @@ main figure{
     padding: 0.5rem;
     border: 1px solid black;
     text-align: center;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
 }
 
 figure figcaption{
