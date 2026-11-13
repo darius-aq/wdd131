@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darius Arocutipa - WDD1131</title>
+    <meta name="author" content="Darius Cesar Arocutipa Quispe">
+    <meta name="description" content="Discover more information about Puno in Peru. Check geographical and meterological information to decide your next trip">
+    <link rel="stylesheet" href="styles/place.css">
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/getdates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Puno - Peru</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="images/uros-hero-image-large.webp">
+                <source media="(min-width: 750px)" srcset="images/uros-hero-image-medium.webp">
+                <img src="images/uros-hero-image.webp" alt="Uros Islands in Lago Titikaka Peru" width="750" height="1000">
+                <figcaption>
+                    <span class="credits-desktop">Foto de Cristian Quiñones Ramirez on <a target="_blank" href="https://www.pexels.com/es-es/foto/paisaje-naturaleza-barcos-arquitectura-28034050/">pexels.</a></span>
+                    <span class="credits-mobile">Foto de Jaime Joel Vargas Huacre on <a target="_blank" href="https://www.pexels.com/es-es/foto/isla-flotante-en-el-lago-titicaca-bajo-un-cielo-azul-34057369/">pexels.</a></span>
+                </figcaption>
+            </picture>
+        </div>
+        <section class="main-content">
+            <section class="card-container">
+                <h2>Data</h2>
+                <div class="card-content">
+                    <ul>
+                        <li><span class="label">Area:</span>71,999 km&sup2;</li>
+                        <li><span class="label">Population:</span>1,238,435</li>
+                        <li><span class="label">Capital:</span>Puno City</li>
+                        <li><span class="label">Languages:</span>Spanish</li>
+                        <li><span class="label">Currency:</span>Peruvian Sol</li>
+                        <li><span class="label">Time Zone:</span>UTC-5</li>
+                        <li><span class="label">Calling Code:</span>+51</li>
+                        <li><span class="label">Internet TLD:</span>.pe</li>
+                    </ul>
+                </div>
+                
+            </section>
+            <section class="card-container">
+                <h2>Weather</h2>
+                <img src="images/weather-icon.svg" alt="weather icon">
+                <div class="card-content">
+                    <ul>
+                        <li><span class="label">Temperature:</span>2.0°C</li>
+                        <li><span class="label">Conditions:</span>Clear and dry</li>
+                        <li><span class="label">Wind:</span>11.5 km/h</li>
+                        <li><span class="label">Wind Chill:</span>----</li>
+                    </ul>
+                </div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🗻 Darius Arocutipa 🗻 Peru </p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
