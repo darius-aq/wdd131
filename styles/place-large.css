@@ -1,11 +1,3 @@
-:root{
-    --primary-color: #334960;
-    --secondary-color: #edeaea;
-    --accent-color: #fff;
-    --accent-color2: #333333;
-    --font-page: "Roboto", sans-serif;
-}
-
 @media screen and (min-width: 750px){
     .credits-mobile{
         display: none;
@@ -25,7 +17,6 @@
         top: 5rem;
         border: none;
         width: 100%;
-        /* background-color: red; */
         gap: 20px;
     }
 
@@ -42,8 +33,8 @@
     }
 
     .weather h2{
-        background-color: var(--primary-color);
-        color: var(--accent-color);
+        background-color: #334960;
+        color: #fff;
         width: 15rem;
         text-align: left;
         position: absolute;
@@ -67,8 +58,8 @@
     }
 
     .data h2{
-        background-color: var(--primary-color);
-        color: var(--accent-color);
+        background-color: #334960;
+        color: #fff;
         width: 15rem;
         text-align: left;
         position: absolute;
