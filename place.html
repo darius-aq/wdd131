@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script defer src="scripts/place.js"></script>
+    <script defer src="scripts/calculateWindChill.js"></script>
     <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
@@ -31,7 +31,7 @@
             </picture>
         </div>
         <section class="main-content">
-            <section class="card-container">
+            <section class="card-container data">
                 <h2>Data</h2>
                 <div class="card-content">
                     <ul>
@@ -47,7 +47,7 @@
                 </div>
                 
             </section>
-            <section class="card-container">
+            <section class="card-container weather">
                 <h2>Weather</h2>
                 <img src="images/weather-icon.svg" alt="weather icon">
                 <div class="card-content">
@@ -55,7 +55,7 @@
                         <li><span class="label">Temperature:</span>2.0°C</li>
                         <li><span class="label">Conditions:</span>Clear and dry</li>
                         <li><span class="label">Wind:</span>11.5 km/h</li>
-                        <li><span class="label">Wind Chill:</span>----</li>
+                        <li><span class="label">Wind Chill:</span> <span id="windChill"></span></li>
                     </ul>
                 </div>
             </section>

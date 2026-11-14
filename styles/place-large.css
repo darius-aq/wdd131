@@ -1,15 +1,28 @@
 @media screen and (min-width: 1200px){
+    main{
+        position: relative;
+    }
     .main-content{
-        position: absolute;
+        padding: 0px;
         top: 5rem;
         border: none;
-    }
-    .card-container h2{
-        font-size: 1.2rem;
+        width: 100%;
+        /* background-color: red; */
+        gap: 20px;
     }
 
-    .card-content{
-        font-size: 0.8rem;
+    .weather{
+        position: absolute;
+        margin: 2rem;
+        bottom: 0rem;
+        right: 0rem;
+        
+    }
+    .data{
+        position: absolute;
+        margin: 1rem;
+        top: 0rem;
+        left: 0rem;
     }
     
 }

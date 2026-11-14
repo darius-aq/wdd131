@@ -72,14 +72,15 @@ main{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
     justify-items: center;
-    padding: 2rem ;
+    /* padding: 2rem ; */
 }
 
 .card-container{
     display: grid;
     justify-items: center;
     align-items: center;
-    width: 18rem;
+    width: 100%;
+    max-width: 18rem;
     padding: 1rem;
     margin: 5%;
     text-align: center;
