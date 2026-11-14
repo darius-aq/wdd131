@@ -70,7 +70,7 @@ main{
 .main-content{
     border-top: 1rem solid var(--accent-color2);
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 19rem), 1fr));
     justify-items: center;
     /* padding: 2rem ; */
 }
@@ -97,6 +97,7 @@ main{
 .card-container img{      /*Weather Icon */
     width: 25%;
     margin-bottom: 1rem;
+    min-width: 16px;
 }
 
 .card-content li{
