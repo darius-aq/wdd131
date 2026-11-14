@@ -8,10 +8,12 @@
     <meta name="description" content="Discover more information about Puno in Peru. Check geographical and meterological information to decide your next trip">
     <link rel="stylesheet" href="styles/place.css">
     <link rel="stylesheet" href="styles/place-large.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <script defer src="scripts/calculateWindChill.js"></script>
+    
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+    <script defer src="scripts/calculate-wind-chill.js"></script>
     <script defer src="scripts/getdates.js"></script>
 </head>
 <body>
@@ -24,11 +26,9 @@
                 <source media="(min-width: 1200px)" srcset="images/uros-hero-image-large.webp">
                 <source media="(min-width: 750px)" srcset="images/uros-hero-image-medium.webp">
                 <img src="images/uros-hero-image.webp" alt="Uros Islands in Lago Titikaka Peru" width="750" height="1000">
-                <figcaption>
-                    <span class="credits-desktop">Foto de Cristian Quiñones Ramirez on <a target="_blank" href="https://www.pexels.com/es-es/foto/paisaje-naturaleza-barcos-arquitectura-28034050/">pexels.</a></span>
-                    <span class="credits-mobile">Foto de Jaime Joel Vargas Huacre on <a target="_blank" href="https://www.pexels.com/es-es/foto/isla-flotante-en-el-lago-titicaca-bajo-un-cielo-azul-34057369/">pexels.</a></span>
-                </figcaption>
             </picture>
+            <span class="credits-desktop">Foto de Cristian Quiñones Ramirez on <a target="_blank" href="https://www.pexels.com/es-es/foto/paisaje-naturaleza-barcos-arquitectura-28034050/">pexels.</a></span>
+            <span class="credits-mobile">Foto de Jaime Joel Vargas Huacre on <a target="_blank" href="https://www.pexels.com/es-es/foto/isla-flotante-en-el-lago-titicaca-bajo-un-cielo-azul-34057369/">pexels.</a></span>
         </div>
         <section class="main-content">
             <section class="card-container data">
@@ -49,7 +49,7 @@
             </section>
             <section class="card-container weather">
                 <h2>Weather</h2>
-                <img src="images/weather-icon.svg" alt="weather icon">
+                <img src="images/weather-icon.svg" alt="weather icon" class="weather-icon">
                 <div class="card-content">
                     <ul>
                         <li><span class="label">Temperature:</span>2.0°C</li>

@@ -1,5 +1,23 @@
-@media screen and (min-width: 1200px){
-    main{
+:root{
+    --primary-color: #334960;
+    --secondary-color: #edeaea;
+    --accent-color: #fff;
+    --accent-color2: #333333;
+    --font-page: "Roboto", sans-serif;
+}
+
+@media screen and (min-width: 750px){
+    .credits-mobile{
+        display: none;
+    }
+ 
+    .credits-desktop{
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1080px){
+    main {
         position: relative;
     }
     .main-content{
@@ -11,18 +29,52 @@
         gap: 20px;
     }
 
+    .card-container{
+        padding-top: 7rem;
+        border-radius: 0;
+        opacity: 0.9;
+    }
+    /* ---------------------------CARD WEATHER----------------------------------- */
     .weather{
         position: absolute;
-        margin: 2rem;
-        bottom: 0rem;
-        right: 0rem;
-        
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
+
+    .weather h2{
+        background-color: var(--primary-color);
+        color: var(--accent-color);
+        width: 15rem;
+        text-align: left;
+        position: absolute;
+        bottom: 8rem;
+        right: 4rem;
+        padding: 1rem;
+    }
+
+    .weather h2::after{
+        content: " ⛅";
+    }
+
+    .weather-icon{
+        display: none;
+    }
+    /* ---------------------------CARD DATA----------------------------------- */
     .data{
         position: absolute;
-        margin: 1rem;
         top: 0rem;
         left: 0rem;
     }
-    
+
+    .data h2{
+        background-color: var(--primary-color);
+        color: var(--accent-color);
+        width: 15rem;
+        text-align: left;
+        position: absolute;
+        top: 1rem;
+        left: -1rem;
+        padding: 1rem; 
+    }
 }
+
