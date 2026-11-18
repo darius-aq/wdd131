@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
+    margin: 10% auto;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+caption{
+    font-size: smaller;
+    padding: 1rem;
+}
+
+th, td{
+    border: 1px solid rgba(113, 3, 107, 0.3);
+}
+
+thead{
+    background-color: #71036b;
+    color: #fff;
+}
+
+thead tr:last-child th{
+    background-color: #9c3b99;
+}
+
+thead th{
+    padding: 0.9rem;
+    font-size: larger;
+}
+
+tbody td, tbody th{
+    padding: 0.3rem 1rem;
+}
+
+tbody tr:nth-child(even){
+    background-color: #af92ae98;
+}
