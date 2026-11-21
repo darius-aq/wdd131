@@ -1,0 +1,53 @@
+:root{
+    --primary-color: rgba(255, 244, 79, 1);
+    --secondary-color: #262e3f;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+h1{
+    display: block;
+    background-color:var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+img{
+    display: block;
+    margin: 2rem auto;
+    background-color: rgba(0, 0, 0, 0);
+    animation: fade 5s;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* ---------------------------------------------FOOTER------------------------------------------- */
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding: 1rem;
+}
+
+#lastModified{
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}
+
+

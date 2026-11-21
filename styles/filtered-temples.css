@@ -1,0 +1,139 @@
+:root{
+    --primary-color: #e3c6ac;
+    --secondary-color: #262e3f;
+    --accent-color: #ed8a63;
+    --accent-color2: #845007;
+    --font-page: "Roboto", sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: var(--font-page);
+}
+
+header{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1.8rem 1.5rem;
+    background-color: var(--primary-color);
+}
+
+.open{
+    grid-template-columns: 1fr;
+}
+
+h1, header p{
+    color: var(--secondary-color);
+    font-size: 2rem;
+    font-weight: bold;
+    /* padding: 0.7rem; */
+}
+
+.open p{
+    display: none;
+}
+
+#menu{
+    position: absolute;
+    top: 1.8rem;
+    right: 1.5rem;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-weight: bold;
+    padding: 0.92rem;
+}
+
+#menu::before{
+    content: "☰";
+} 
+
+#menu.open::before{
+    content: "X";
+}
+
+nav{
+    background-color: var(--secondary-color);
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    background-color: var(--secondary-color);
+}
+
+nav a {
+    text-decoration: none;
+    display: none;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: larger;
+    font-weight: bold;
+}
+
+
+nav a:hover{
+    background-color: var(--accent-color);
+}
+
+/* Toggle open */
+.open a{
+    display: block;
+}
+
+.active::before{
+    content:"📌";
+}
+
+main{
+    max-width: 937px;
+    margin: 2rem 2%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    justify-items: center;
+}
+
+main h1{
+    grid-column: 1/-1;
+}
+
+main figure{
+    margin: 0.5rem;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+figure img{
+    width: 100%;
+    height: auto;
+}
+
+figure figcaption{
+    padding: 0.3rem;
+}
+
+footer{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    font-family: var(--font-page);
+    font-size: 1.1rem;
+    font-weight: 550;
+    padding: 1rem;
+}
+
+#lastModified{
+    margin-top: 0.8rem;
+    font-size: 0.8rem;
+}
